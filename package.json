@@ -1,0 +1,33 @@
+{
+  "name": "inquirr",
+  "version": "1.0.0",
+  "description": "This is a submission for NASA Space Apps Challenge 2023",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "collaborative-filter": "^1.0.0-beta.3",
+    "connect-mongo": "^3.0.0",
+    "dotenv": "^8.6.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "express-ws": "^5.0.2",
+    "mongodb": "^4.17.1",
+    "mongoose": "^5.6.10",
+    "qrcode": "^1.5.3",
+    "speakeasy": "^2.0.0"
+  },
+  "scripts": {
+    "start": "npx nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guruhariharaun/creating-registration-and-login-form-in-nodejs-and-mongodb"
+  },
+  "author": "GuruRoxz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guruhariharaun/creating-registration-and-login-form-in-nodejs-and-mongodb"
+  },
+  "homepage": "https://github.com/guruhariharaun/creating-registration-and-login-form-in-nodejs-and-mongodb#read.me"
+}

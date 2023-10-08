@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INQUIRR</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/home.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript">
+	</script>
+</head>
+<body>
+	<%- include("header", {show_options: true});%>
+	<div class="doc-wrapper">
+		<h1>Explore <span class="material-symbols-outlined">arrow_right_alt</span></h1>
+		<div class="project-container">
+			<div class="project-inner-container">
+				<% projects.forEach(i => { %>
+					<%- include("project-template", {project: i}); %>
+				<% }) %>
+			</div>
+		</div>
+		<h1>Potential research partners <span class="material-symbols-outlined">arrow_right_alt</span></h1>
+		<div class="users-container">
+			<div class="users-inner-container">
+				<% users.forEach(i => { %>
+					<%- include("user-template", {user: i}); %>
+				<% }) %>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

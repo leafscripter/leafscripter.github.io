@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INQUIRR</title>
+	<link rel="icon" type="image/x-icon" href="/views/favicon.ico">
+	<link rel="stylesheet" href="./css/main.css">
+
+	<script type="text/javascript">
+		const ws = new WebSocket(`wss${location.href.substring(location.href.indexOf('://'))}`);
+		ws.addEventListener('open', (event) => {
+			const content = document.getElementById('post-text');
+			const post_container = document.getElementById('posts');
+			document.getElementById('send-post').addEventListener('click', (event) => {
+				ws.send(content.value);
+			});
+			ws.addEventListener('message', (event) => {
+				const new_post = document.createElement('pre');
+				new_post.textContent = event.data;
+				console.log(event.data);
+				post_container.appendChild(new_post);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id='posts'>
+	</div>
+	
+	<div>
+		<input id='post-text' />
+		<button id='send-post'>send</button>
+	</div>
+</body>
+</html>

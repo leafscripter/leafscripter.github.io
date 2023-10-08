@@ -1,0 +1,111 @@
+.doc-wrapper {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.project-container {
+	overflow: auto;
+}
+.project-inner-container {
+	width: max-content;
+}
+.project {
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	width: 40vw;
+	height: 200px;
+	background-color: purple;
+	border-radius: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	/* background: center / cover no-repeat linear-gradient(red, purple); */
+	background: center / cover no-repeat url('/space.jpg');
+}
+.project .name, .project .metadata {
+	color: white;
+}
+.project .name {
+	color: white;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 1.75rem;
+}
+.project .metadata {
+	vertical-align: center;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.project .metadata .material-symbols-outlined {
+	vertical-align: center;
+	position: relative;
+	top: 4px;
+	font-size: 1.25rem;
+}
+
+.users-container {
+	overflow: auto;
+}
+.users-inner-container {
+	width: max-content;
+}
+.user {
+	position: relative;
+	float: left;
+	width: 40vw;
+	background-color: white;
+	border-radius: 20px;
+	margin-right: 20px;
+	box-shadow: 0 0 0 2px inset #aaa;
+	text-align: center;
+	min-height: 300px;
+}
+.user img {
+	display: block;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+.user span {
+	font-size: 2rem;
+}
+.user p {
+	font-size: 1rem;
+}
+
+*::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background: #ddd;
+}
+
+.user button {
+	border:none;
+	border-radius: 20px;
+	padding: 5px;
+	box-shadow: 0 0 0 1px inset #aaa;
+}
+
+.user .follow {
+	background-color: blue;
+	color: white;
+}
+
+.user .chat {
+	background-color: white;
+}
+
+.user button {
+	margin-bottom: 20px;
+}
